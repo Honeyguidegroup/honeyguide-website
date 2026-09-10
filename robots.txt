@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://honeyguide-group.pages.dev/sitemap.xml
