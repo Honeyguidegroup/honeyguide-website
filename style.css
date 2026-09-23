@@ -44,3 +44,70 @@ body,main,.section{max-width:100vw}
 
 @media(max-width:980px){.process-photo-grid,.journey-grid{grid-template-columns:1fr}.process-photo-grid figure,.process-photo-grid img{min-height:330px}.hero-mark-reveal{background-size:360px auto;background-position:center -6px}.hero-word-reveal{background-size:360px auto;background-position:center -160px;height:36px}}
 @media(max-width:620px){.hero-logo-stage{width:320px;aspect-ratio:1.05}.hero-mark-reveal{width:310px;height:125px;background-size:310px auto;background-position:center -5px}.hero-word-reveal{width:300px;height:31px;background-size:300px auto;background-position:center -134px}.hero-logo-sub{font-size:8px;letter-spacing:4px}.process-photo-grid figure,.process-photo-grid img{min-height:290px}.journey-grid article{min-height:0}}
+
+/* V11 — honey-gold identity, independent mark/wordmark, African visual language */
+:root{
+  --gold:#c88f24;
+  --gold2:#e0aa3c;
+  --honey:#d49a2b;
+  --honey-deep:#9a6718;
+  --ink:#080806;
+  --brand-display:'Bebas Neue','Arial Narrow',sans-serif;
+}
+body{color:#e8dfcf;background:var(--ink)}
+.brand{gap:11px;min-width:220px}
+.brand-mark,.footer-mark{display:block;flex:0 0 auto;background-image:url("assets/honeyguide-logo-transparent.png");background-repeat:no-repeat;background-size:220px auto;background-position:center top;filter:brightness(0) saturate(100%) invert(66%) sepia(48%) saturate(1050%) hue-rotate(2deg) brightness(90%) contrast(94%) drop-shadow(0 0 12px rgba(212,154,43,.16))}
+.brand-mark{width:44px;height:39px}
+.brand-wordmark,.footer-wordmark{font-family:var(--brand-display);font-weight:400;letter-spacing:2.8px;color:var(--gold2);line-height:1}
+.brand-wordmark{font-size:25px}
+.hero-logo-lockup{gap:10px}
+.hero-mark-reveal{width:min(430px,74vw);height:176px;background-image:url("assets/honeyguide-logo-transparent.png");background-repeat:no-repeat;background-size:430px auto;background-position:center top;filter:brightness(0) saturate(100%) invert(66%) sepia(48%) saturate(1050%) hue-rotate(2deg) brightness(90%) contrast(94%) drop-shadow(0 0 34px rgba(212,154,43,.22));clip-path:inset(0 100% 0 0);animation:markBuildV11 1.9s cubic-bezier(.16,1,.3,1) .25s forwards}
+.hero-word-reveal{width:min(430px,74vw);font-family:var(--brand-display);font-size:clamp(48px,7vw,76px);font-weight:400;line-height:.86;letter-spacing:10px;text-indent:10px;text-align:center;color:var(--gold2);opacity:0;transform:translateY(14px) scale(.94);animation:wordSettleV11 1.15s cubic-bezier(.16,1,.3,1) 1.35s forwards;text-shadow:0 0 22px rgba(212,154,43,.12)}
+.hero-logo-sub{color:rgba(224,170,60,.9);letter-spacing:7px}
+@keyframes markBuildV11{0%{opacity:0;clip-path:inset(0 100% 0 0);transform:translateX(-34px) scale(.92)}30%{opacity:1}72%{clip-path:inset(0 10% 0 0);transform:translateX(5px) scale(1.01)}100%{opacity:1;clip-path:inset(0 0 0 0);transform:none}}
+@keyframes wordSettleV11{0%{opacity:0;letter-spacing:18px;transform:translateY(14px) scale(.92)}65%{opacity:1}100%{opacity:1;letter-spacing:2px;transform:none}}
+.hero-kicker,.eyebrow{color:var(--gold2)}
+.hero h1 span,.section-head h2 em,.split-copy h2 em,.story-preview-copy h2 em,.impact-band h2 em,.honey-name{color:var(--gold2)!important}
+.hero p,.section-head>p,.split-copy>p,.story-preview-copy>p{color:#c5bcac}
+/* Honey-splash accents: restrained, not cartoonish */
+.honey-intro{position:relative;overflow:hidden}
+.honey-intro:before,.honey-intro:after{content:"";position:absolute;z-index:0;pointer-events:none;background:radial-gradient(circle,var(--honey) 0 34%,rgba(212,154,43,.62) 35% 48%,transparent 49%);filter:blur(.2px);opacity:.18}
+.honey-intro:before{width:180px;height:90px;left:7%;top:-42px;border-radius:48% 52% 38% 62%/55% 45% 55% 45%;transform:rotate(-12deg)}
+.honey-intro:after{width:120px;height:65px;right:11%;bottom:-30px;border-radius:58% 42% 50% 50%;transform:rotate(15deg)}
+.honey-intro>*{position:relative;z-index:1}
+.section-head h2,.split-copy h2,.story-preview-copy h2{font-family:var(--display)}
+.venture-body h3,.journey-grid h3{font-family:var(--brand-display);font-weight:400;letter-spacing:1px;text-transform:uppercase}
+.venture-body h3{font-size:46px;line-height:.92}
+.honey-splash{position:relative;display:inline-block;color:var(--gold2)}
+.honey-splash:after{content:"";position:absolute;z-index:-1;left:-10%;right:-8%;bottom:7%;height:35%;background:radial-gradient(ellipse at center,rgba(212,154,43,.32),transparent 72%);filter:blur(7px);transform:rotate(-2deg)}
+.african-processing,.african-context{background:#0b0a08}
+.african-processing .section-head h2,.african-context .section-head h2{max-width:760px}
+.african-context{border-top:1px solid rgba(212,154,43,.12)}
+.africa-grid{display:grid;grid-template-columns:1.15fr 1fr 1fr;gap:14px}
+.africa-grid figure{position:relative;margin:0;min-height:430px;overflow:hidden;border:1px solid rgba(212,154,43,.2);background:#11100d}
+.africa-grid img{width:100%;height:100%;min-height:430px;object-fit:cover;filter:saturate(.72) contrast(1.08) brightness(.75);transition:transform .8s ease,filter .5s ease}
+.africa-grid figure:hover img{transform:scale(1.045);filter:saturate(.9) contrast(1.08) brightness(.88)}
+.africa-grid figcaption{position:absolute;left:0;right:0;bottom:0;padding:65px 24px 22px;background:linear-gradient(transparent,rgba(0,0,0,.92))}
+.africa-grid figcaption span{display:block;color:var(--gold2);font-size:9px;letter-spacing:2px}
+.africa-grid figcaption b{display:block;font-family:var(--brand-display);font-size:29px;letter-spacing:1px;font-weight:400;margin-top:4px}
+.footer-brand{display:flex;align-items:center;gap:12px}
+.footer-mark{width:46px;height:42px;background-size:230px auto}
+.footer-wordmark{font-size:30px}
+.footer img{display:none}
+.footer p{color:#80796e}
+/* Remove bright-yellow feel from legacy gold rules */
+.progress{background:var(--gold2)}
+.btn-gold{background:var(--gold);color:#090806}
+.nav a:hover,.text-link,.venture-body>b,.flow-label span,.flow-label b,.hero-side-note>span,.hero-side-note b{color:var(--gold2)}
+/* Desktop safety: never allow long words/sections to push beyond viewport */
+.section,.section-head,.image-flow,.dark-split,.story-preview,.africa-grid,.process-photo-grid,.venture-grid,.metrics,.journey-grid{min-width:0}
+.section-head>p,.split-copy>p,.story-preview-copy>p{overflow-wrap:anywhere}
+@media(max-width:980px){.brand{min-width:0}.brand-wordmark{font-size:22px}.brand-mark{width:39px;height:35px;background-size:195px auto}.africa-grid{grid-template-columns:1fr}.africa-grid figure,.africa-grid img{min-height:330px}.hero-mark-reveal{width:350px;height:145px;background-size:350px auto}.hero-word-reveal{width:350px;font-size:56px}}
+@media(max-width:620px){.brand-wordmark{font-size:19px;letter-spacing:2px}.brand-mark{width:34px;height:31px;background-size:170px auto}.hero-logo-stage{width:330px}.hero-mark-reveal{width:300px;height:125px;background-size:300px auto}.hero-word-reveal{width:300px;font-size:48px;letter-spacing:7px}.hero-logo-sub{letter-spacing:4px}.africa-grid figure,.africa-grid img{min-height:300px}.honey-intro:before{left:-30px}.honey-intro:after{right:-20px}}
+
+/* Keep legacy page headers visually consistent without requiring page-file replacement. */
+.brand img{width:44px;height:39px;object-fit:cover;object-position:center top;transform:scale(1.15);transform-origin:left center;clip-path:inset(0 48% 48% 0);margin-right:2px}
+.brand:has(img):after{content:"HONEYGUIDE";font-family:var(--brand-display);font-size:25px;letter-spacing:2.8px;color:var(--gold2);line-height:1}
+.footer img{display:none!important}
+@media(max-width:980px){.brand img{width:39px;height:35px}.brand:has(img):after{font-size:22px}}
+@media(max-width:620px){.brand img{width:34px;height:31px}.brand:has(img):after{font-size:19px;letter-spacing:2px}}
