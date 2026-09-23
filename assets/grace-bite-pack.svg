@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 900">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#151513"/><stop offset=".62" stop-color="#2a2417"/><stop offset="1" stop-color="#b27a18"/></linearGradient><filter id="s"><feDropShadow dx="0" dy="24" stdDeviation="20" flood-opacity=".35"/></filter></defs>
+<rect x="150" y="55" width="400" height="790" rx="34" fill="url(#g)" filter="url(#s)"/>
+<rect x="170" y="75" width="360" height="750" rx="26" fill="none" stroke="#d7a63a" stroke-opacity=".65" stroke-width="3"/>
+<text x="200" y="145" fill="#d7a63a" font-family="Arial,sans-serif" font-weight="800" font-size="24" letter-spacing="5">HONEYGUIDE</text>
+<text x="350" y="265" text-anchor="middle" fill="#fff" font-family="Georgia,serif" font-weight="700" font-size="76">GRACE BITE</text>
+<text x="350" y="325" text-anchor="middle" fill="#d7a63a" font-family="Arial,sans-serif" font-weight="900" font-size="28" letter-spacing="5">BAKED POTATO</text>
+<g transform="translate(250 390)"><path d="M15 145 Q45 35 95 100 Q135 30 175 120 Q150 180 80 185 Q25 175 15 145Z" fill="#d6b36a"/><path d="M38 135 Q70 90 92 150 M115 140 Q140 100 160 150" fill="none" stroke="#8a5b14" stroke-width="9" stroke-linecap="round"/><circle cx="103" cy="105" r="12" fill="#24190b"/></g>
+<text x="350" y="620" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-weight="900" font-size="21">SMOKY · HOT · GOAT-MEAT SAUCE</text>
+<rect x="250" y="665" width="200" height="80" rx="16" fill="#d7a63a"/><text x="350" y="697" text-anchor="middle" font-family="Arial,sans-serif" font-weight="900" font-size="16">SAUCE CUP</text><text x="350" y="722" text-anchor="middle" font-family="Arial,sans-serif" font-size="13">CONCEPT INSERT</text>
+<text x="350" y="785" text-anchor="middle" fill="#d9d2c4" font-family="Arial,sans-serif" font-weight="800" font-size="14" letter-spacing="3">COMING SOON · PRODUCT DEVELOPMENT</text>
+</svg>
