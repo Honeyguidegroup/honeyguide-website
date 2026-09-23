@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://honeyguidegroup-website.okedijerry.workers.dev/sitemap.xml
