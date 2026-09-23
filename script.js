@@ -1,0 +1,4 @@
+const menu=document.querySelector('.menu-toggle');const nav=document.querySelector('.nav');if(menu){menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',open)});nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')))}
+const progress=document.getElementById('progress');addEventListener('scroll',()=>{const h=document.documentElement.scrollHeight-innerHeight;progress.style.width=(h>0?(scrollY/h)*100:0)+'%'});
+const revealables=document.querySelectorAll('.story-timeline,.product-card,.data-card,.scale-line,.leader-card,.pillar,.ecosystem-grid article');
+if('IntersectionObserver' in window){const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('is-visible');io.unobserve(e.target)}}),{threshold:.12});revealables.forEach(el=>{el.classList.add('reveal');io.observe(el)})}
