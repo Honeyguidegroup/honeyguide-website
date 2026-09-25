@@ -20,13 +20,14 @@
 </header>
 <main>
 <section class="hero" id="home">
-  <video class="hero-video" autoplay muted loop playsinline poster="https://images.pexels.com/photos/9798994/pexels-photo-9798994.jpeg?auto=compress&cs=tinysrgb&w=1600"><source src="https://videos.pexels.com/video-files/6280678/6280678-uhd_3840_2160_30fps.mp4" type="video/mp4"></video>
+  <video class="hero-video" id="heroVideo" autoplay muted playsinline preload="auto" poster="https://images.pexels.com/photos/9798994/pexels-photo-9798994.jpeg?auto=compress&cs=tinysrgb&w=1600"><source src="https://videos.pexels.com/video-files/6280678/6280678-uhd_3840_2160_30fps.mp4" type="video/mp4"></video>
   <div class="hero-video-overlay"></div><div class="hero-grain"></div>
   <div class="hero-content">
-    <div class="hero-logo-stage" aria-label="HoneyGuide logo animation">
-      <div class="logo-particles"></div><div class="logo-ring"></div>
+    <div class="hero-logo-stage" aria-label="HoneyGuide logo motion graphic">
+      <div class="logo-aura"></div>
       <img class="hero-logo" src="assets/honeyguide-mark.svg" alt="HoneyGuide Group standalone mark">
       <div class="logo-shine"></div>
+      <span class="logo-signage-label">HONEYGUIDE GROUP</span>
     </div>
     <div class="hero-kicker">HONEYGUIDE GROUP LIMITED</div>
     <h1>From <span>origin</span> to opportunity.</h1>
@@ -37,8 +38,18 @@
   <a class="scroll-cue" href="#value-chain">Scroll to discover <b>↓</b></a>
 </section>
 
-<section class="intro-strip">
-  <div class="strip-word">GUIDING DISCOVERY</div><div class="strip-word">CREATING VALUE</div><div class="strip-word">BUILDING FUTURES</div>
+<section class="intro-strip" aria-label="HoneyGuide principles">
+  <div class="strip-word"><span>01</span><strong>GUIDING DISCOVERY</strong><small>Recognising opportunity where resources, people and markets meet.</small></div>
+  <div class="strip-word"><span>02</span><strong>CREATING VALUE</strong><small>Turning available resources into useful, higher-value products and possibilities.</small></div>
+  <div class="strip-word"><span>03</span><strong>BUILDING FUTURES</strong><small>Growing responsibly through people, enterprise, partnerships and disciplined execution.</small></div>
+</section>
+
+<section class="principle-motto" aria-label="HoneyGuide guiding principle">
+  <div class="motto-inner">
+    <span class="eyebrow">OUR GUIDING PRINCIPLE</span>
+    <h2>EXCELLENCE IN<br><em>EVERY ENDEAVOR.</em></h2>
+    <p>Not a decorative phrase. It is the standard HoneyGuide intends to carry into its products, relationships, operations, documentation and growth.</p>
+  </div>
 </section>
 
 <section class="section value-chain" id="value-chain">
@@ -79,10 +90,55 @@
   <div class="scale-rail"><span>Validate</span><i></i><span>Build distribution</span><i></i><span>Expand</span><i></i><span>Scale</span></div>
 </section>
 
+<section class="section contact-band" id="contact">
+  <div class="section-head"><div><span class="eyebrow">06 / CONNECT WITH HONEYGUIDE</span><h2>Start a conversation.<br><em>Directly.</em></h2></div><p>Choose WhatsApp for a quick conversation, or send a message through the website. Your message can be sent directly to HoneyGuide Group Limited.</p></div>
+  <div class="contact-grid">
+    <div class="contact-direct">
+      <a class="whatsapp-card" href="https://wa.me/2348162581359?text=Hello%20HoneyGuide%20Group%2C%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener" aria-label="WhatsApp HoneyGuide Group Limited">
+        <span class="contact-icon">WA</span><div><small>FOUNDER / CEO</small><strong>Jerry Whyte</strong><b>WhatsApp · +234 816 258 1359</b></div><i>↗</i>
+      </a>
+      <a class="whatsapp-card" href="https://wa.me/2348161324694?text=Hello%20HoneyGuide%20Group%2C%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener" aria-label="WhatsApp HoneyGuide Group Administrative Secretary">
+        <span class="contact-icon">WA</span><div><small>ADMINISTRATIVE SECRETARY</small><strong>Ganiyat Niya</strong><b>WhatsApp · +234 816 132 4694</b></div><i>↗</i>
+      </a>
+      <div class="contact-email"><small>EMAIL</small><strong>honeyguidegroup@outlook.com</strong></div>
+    </div>
+    <form class="contact-form" action="https://formsubmit.co/honeyguidegroup@outlook.com" method="POST">
+      <input type="hidden" name="_subject" value="New HoneyGuide Group website enquiry">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://honeyguidegroup-website.okedijerry.workers.dev/#contact-sent">
+      <label>Name<input type="text" name="name" autocomplete="name" required></label>
+      <div class="form-row"><label>Email<input type="email" name="email" autocomplete="email" required></label><label>Phone / WhatsApp<input type="tel" name="phone" autocomplete="tel" required></label></div>
+      <label>Message<textarea name="message" rows="5" required></textarea></label>
+      <button class="btn btn-gold" type="submit">Send message <b>→</b></button>
+    </form>
+  </div>
+</section>
+
 <section class="section impact-band">
-  <div><span class="eyebrow">06 / THE HONEYGUIDE MODEL</span><h2>Source. Transform. <em>Reach.</em></h2></div>
+  <div><span class="eyebrow">07 / THE HONEYGUIDE MODEL</span><h2>Source. Transform. <em>Reach.</em></h2></div>
   <div class="impact-points"><span>Farmer relationships</span><span>Food processing</span><span>Professional packaging</span><span>Market access</span><span>Strategic partnerships</span><span>Future ventures</span></div>
 </section>
 </main>
-<footer class="footer"><div class="footer-brand"><img src="assets/honeyguide-mark.svg" alt="HoneyGuide Group standalone mark"><span>HONEYGUIDE</span><p>Guiding discovery. Creating value. Building futures.</p></div><nav><a href="pages/about.html">About</a><a href="pages/story.html">Our Story</a><a href="pages/macdons.html">Macdon’s</a><a href="pages/grace-bite.html">Grace Bite</a><a href="pages/market.html">Market</a><a href="pages/leadership.html">Leadership</a><a href="pages/contact.html">Contact</a></nav><small>© 2006 C. Inona · HoneyGuide Group Limited · Illustrative stock imagery is labelled where used.</small></footer>
+<footer class="footer"><div class="footer-brand"><img src="assets/honeyguide-mark.svg" alt="HoneyGuide Group standalone mark"><span>HONEYGUIDE</span><p>Guiding discovery. Creating value. Building futures.</p></div><nav><a href="pages/about.html">About</a><a href="pages/story.html">Our Story</a><a href="pages/macdons.html">Macdon’s</a><a href="pages/grace-bite.html">Grace Bite</a><a href="pages/market.html">Market</a><a href="pages/leadership.html">Leadership</a><a href="pages/contact.html">Contact</a></nav><small>© 2026 HoneyGuide Group Limited</small></footer>
+<script>
+(function(){
+  const v=document.getElementById('heroVideo');
+  if(!v) return;
+  const clips=[
+    'https://videos.pexels.com/video-files/6280678/6280678-uhd_3840_2160_30fps.mp4',
+    'https://videos.pexels.com/video-files/36706953/15558535_1920_1080_30fps.mp4'
+  ];
+  let i=0;
+  v.addEventListener('ended',function(){
+    i=(i+1)%clips.length;
+    v.src=clips[i];
+    v.load();
+    const play=v.play();
+    if(play && play.catch) play.catch(function(){});
+  });
+  const play=v.play();
+  if(play && play.catch) play.catch(function(){});
+})();
+</script>
 </body></html>
